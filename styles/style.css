@@ -27,11 +27,89 @@ body {
   --white: #ffffff;
 }
 
-/*===== 
-    ***** COMMON CLASSES *****
-=====*/
+/*========== 
+    ***** COMMON STYLES *****
+==========*/
 .container {
-  width: 1280px;
+  max-width: 1280px;
   padding: 0 80px;
   margin: 0 auto;
+}
+.btn {
+  padding: 10px 50px;
+  border-radius: 12px;
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+}
+
+/*==========
+    ***** NAVIGATION SECTION *****
+==========*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.logo h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-links ul {
+  display: flex;
+  gap: 24px;
+}
+.nav-links li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.nav-links li:nth-child(1) {
+  color: var(--sky-blue);
+  font-weight: 700;
+}
+.nav-links li:nth-child(2) {
+  color: var(--sky-blue);
+}
+.nav-links li:nth-child(3) {
+  color: var(--sea);
+}
+.nav-links li:nth-child(4) {
+  color: var(--mojarella-blue);
+}
+.navigation button {
+  background-color: var(--sky-blue);
+}
+.mobile-nav {
+  display: none;
+}
+
+/*===================================
+    ***** MOBILE RESPONSIVE *****
+=====================================*/
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: auto;
+    padding: 0 30px;
+  }
+  .navigation {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--orange);
+  }
+  .mobile-nav i {
+    font-size: 2rem;
+  }
 }

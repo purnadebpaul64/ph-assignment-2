@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Quicksand", serif;
+}
+
+/*===== 
+    ***** CSS VARIABLES *****
+=====*/
+:root {
+  --orange: #fea301;
+  --american-yellow: #f0aa00;
+  --sky-blue: #01acfd;
+  --maya-blue: #64c8ff;
+  --turquoise: #3cd8e8;
+  --sea: #05d4df;
+  --mojarella-blue: #5d58ef;
+  --electric-violet: #8700ff;
+  --citron: #95b226;
+  --black: #111111;
+  --white: #ffffff;
+}
+
+/*===== 
+    ***** COMMON CLASSES *****
+=====*/
+.container {
+  width: 1280px;
+  padding: 0 80px;
+  margin: 0 auto;
+}

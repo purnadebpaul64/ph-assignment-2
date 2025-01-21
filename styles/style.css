@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -43,11 +43,24 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.raleway {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.section-title {
+  font-size: 2.5rem;
+  padding: 3.8rem 0;
+}
 h1 {
   font-size: 3.5rem;
   line-height: 4.2rem;
   font-weight: 700;
   color: var(--black);
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 p {
   font-size: 1.1rem;
@@ -127,6 +140,81 @@ p {
 .hero-right img {
   width: 100%;
 }
+
+/*==========
+    ***** CURRICULUM SECTION *****
+==========*/
+.curriculum {
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.curriculum-card-container {
+  display: flex;
+  gap: 1.5rem;
+  /* align-items: center; */
+}
+.curriculum-card {
+  padding: 3rem 2rem;
+  border-radius: 18px;
+  background-color: var(--white);
+}
+.curriculum-card:nth-child(1) {
+  background: linear-gradient(
+    180deg,
+    rgba(222, 245, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  border: 1px solid #def5ff;
+  background-color: var(--white);
+}
+.curriculum-card:nth-child(2) {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 244, 220, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  border: 1px solid #fff4dc;
+  background-color: var(--white);
+}
+.curriculum-card:nth-child(3) {
+  background: linear-gradient(
+    180deg,
+    rgba(238, 225, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  border: 1px solid #f2e8ff;
+  background-color: var(--white);
+}
+.curriculum-card h3 {
+  margin: 1rem 0;
+}
+.curriculumn-button {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.cb-1 {
+  color: var(--maya-blue);
+}
+.cb-2 {
+  color: var(--american-yellow);
+}
+.cb-3 {
+  color: var(--electric-violet);
+}
+.arrow-buttons {
+  padding-top: 2rem;
+}
+.arrow-buttons i {
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 50%;
+}
 /*===================================
     =============================
     ***** MOBILE RESPONSIVE *****
@@ -147,6 +235,9 @@ p {
   }
   .btn {
     font-size: 1.1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
   }
   /*==========
     ***** NAVIGATION SECTION *****
@@ -174,5 +265,21 @@ p {
     gap: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+  /*==========
+    ***** CURRICULUM SECTION *****
+==========*/
+  .curriculum {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .curriculum-card-container {
+    flex-direction: column;
+  }
+  .curriculum-card {
+    padding: 3rem 2rem;
+  }
+  .arrow-buttons {
+    display: none;
   }
 }

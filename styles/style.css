@@ -118,6 +118,20 @@ p {
 /*==========
     ***** HERO SECTION *****
 ==========*/
+
+.marquee-section {
+  margin-top: 1rem;
+  padding: 5px;
+  font-weight: 600;
+  border: 1px solid var(--american-yellow);
+  border-radius: 2rem;
+  background-color: #ffeec867;
+  color: var(--black);
+}
+
+/*==========
+    ***** HERO SECTION *****
+==========*/
 .hero-section {
   display: flex;
   gap: 3rem;
@@ -207,12 +221,12 @@ p {
   color: var(--electric-violet);
 }
 .arrow-buttons {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .arrow-buttons i {
   font-size: 1.2rem;
   padding: 1rem;
-  color: var(--white);
+  color: #ffffff;
   background-color: var(--orange);
   border-radius: 50%;
 }
@@ -405,6 +419,7 @@ p {
   }
   .story-cards-container {
     grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
   }
   .story-card h4 {
     font-size: 0.7rem;

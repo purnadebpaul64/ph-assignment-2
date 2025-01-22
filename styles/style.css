@@ -51,6 +51,7 @@ body {
 .section-title {
   font-size: 2.5rem;
   padding: 3.8rem 0;
+  text-align: center;
 }
 h1 {
   font-size: 3.5rem;
@@ -215,6 +216,72 @@ p {
   background-color: var(--orange);
   border-radius: 50%;
 }
+
+/*==========
+    ***** STORY SECTION *****
+==========*/
+
+.story-section {
+  /* background-image: url("/assets/bg.png");
+  background: linear-gradient(360deg, #fea301 0%, #ffffff 100%); */
+  background-image: linear-gradient(
+      to top,
+      rgba(254, 163, 1, 0.5),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.story-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+  position: relative;
+}
+.story-card-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.story-card-content {
+  margin-top: -4px;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 0 0 16px 16px;
+}
+.story-card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.story-card-1 h3 {
+  margin: 1rem 0;
+}
+.story-card h4 {
+  margin-top: 1rem;
+}
+.badge {
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 50px;
+  color: var(--white);
+  position: absolute;
+  transform: translateY(-120%);
+  background-color: var(--citron);
+}
+.badge-spc {
+  background-color: var(--mojarella-blue);
+}
+.badge-big {
+  background-color: var(--turquoise);
+}
+.mobile-btn {
+  display: none;
+}
+
 /*===================================
     =============================
     ***** MOBILE RESPONSIVE *****
@@ -224,11 +291,15 @@ p {
 @media only screen and (max-width: 576px) {
   .container {
     max-width: auto;
-    padding: 0 30px;
+    padding: 0 15px;
   }
   h1 {
-    font-size: 2rem;
-    line-height: 2.6rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
   p {
     font-size: 1rem;
@@ -237,7 +308,7 @@ p {
     font-size: 1.1rem;
   }
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   /*==========
     ***** NAVIGATION SECTION *****
@@ -281,5 +352,39 @@ p {
   }
   .arrow-buttons {
     display: none;
+  }
+
+  /*==========
+    ***** STORY SECTION *****
+==========*/
+  .story-section {
+    padding-top: 1px;
+  }
+  .story-card-1 {
+    display: none;
+  }
+  .story-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .story-card h4 {
+    font-size: 0.7rem;
+  }
+  .story-card-content {
+    padding: 0.8rem;
+  }
+  .badge {
+    padding: 0 10px 5px 10px;
+    font-size: 12px;
+  }
+  .story-card h4 {
+    margin-top: 5px;
+  }
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .story-mobile-btn {
+    background-color: var(--black);
   }
 }

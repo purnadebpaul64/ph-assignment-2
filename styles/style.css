@@ -222,19 +222,16 @@ p {
 ==========*/
 
 .story-section {
-  /* background-image: url("/assets/bg.png");
-  background: linear-gradient(360deg, #fea301 0%, #ffffff 100%); */
   background-image: linear-gradient(
       to top,
-      rgba(254, 163, 1, 0.5),
-      rgba(255, 255, 255, 0.9)
+      rgba(255, 162, 0, 0.441),
+      rgba(255, 255, 255, 0)
     ),
     url("../assets/bg.png");
-  background-repeat: no-repeat;
   background-position: top;
   width: 100%;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 .story-cards-container {
   display: grid;
@@ -278,10 +275,52 @@ p {
 .badge-big {
   background-color: var(--turquoise);
 }
-.mobile-btn {
+.btn-middle {
+  text-align: center;
+}
+.story-mobile-btn {
+  background-color: var(--black);
+  margin-top: 4rem;
+}
+.story-card-only-mobile {
   display: none;
 }
-
+/*==========
+    ***** FOOTER SECTION *****
+==========*/
+.footer {
+  background-color: var(--sky-blue);
+  color: var(--white);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  justify-content: space-around;
+}
+.footer-logo {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+.footer-logo h3 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.footer-title {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.footer-mid {
+  margin: 0 auto;
+}
+.footer-mid ul li {
+  list-style: none;
+  padding-top: 1rem;
+}
 /*===================================
     =============================
     ***** MOBILE RESPONSIVE *****
@@ -291,7 +330,7 @@ p {
 @media only screen and (max-width: 576px) {
   .container {
     max-width: auto;
-    padding: 0 15px;
+    padding: 0 20px;
   }
   h1 {
     font-size: 1.8rem;
@@ -359,6 +398,7 @@ p {
 ==========*/
   .story-section {
     padding-top: 1px;
+    background-position: center;
   }
   .story-card-1 {
     display: none;
@@ -373,18 +413,24 @@ p {
     padding: 0.8rem;
   }
   .badge {
-    padding: 0 10px 5px 10px;
+    padding: 5px 10px;
     font-size: 12px;
   }
   .story-card h4 {
     margin-top: 5px;
   }
-  .mobile-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
+  .story-card-only-mobile {
+    display: inline-block;
   }
-  .story-mobile-btn {
-    background-color: var(--black);
+
+  /*==========
+    ***** FOOTER SECTION *****
+==========*/
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-mid {
+    margin: 0;
   }
 }

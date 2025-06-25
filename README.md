@@ -8,7 +8,3 @@ A responsive product landing page built with **HTML** and **Tailwind CSS**. Desi
 
 - HTML5  
 - Tailwind CSS
-
-## 📸 Preview
-
-![Preview](https://i.ibb.co/PvTK8m4C/Aspiring-Front-End-Developer-Learning-Full-Stack-Development.png)
